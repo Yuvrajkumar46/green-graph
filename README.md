@@ -1,60 +1,146 @@
-# Project-Allocation-System
-A student project allocation system in PHP.
+🌿 GreenGraph
 
-### Author : VATSAL JAGANI
-Supporter : Axit Jariwala
-            Hiren Italiya
-            Mohit Jain
+Project Type: Project Allocation System
 
-## DATABASE
-database sql file for import from phpmyAdmin is inside images/database
-for more details about tables pdf file available at same place
+GreenGraph is a web-based Project Allocation System designed to automate and optimize the allocation of academic projects to student groups. The system ensures a fair, structured, and transparent allocation process using defined academic criteria, reducing manual effort and administrative overhead.
 
-## ADMIN/ALLOCATION
-here admin can change allocation process
-here is the main logic for allocationg the projects to groups by means od average cpi of group members
-flush.php  is for master resetting database
+✨ Key Features
 
-## ADMIN login & logout
+Secure Admin, Student, and Faculty authentication
 
-## STUDENT login
-student login is from index.php main home page
+Automated project allocation based on group average CPI
 
-## CHANGE & FORGOT PASSWORD
-inside chang_pass foler all files related to
-forgot password
-change password
-creating captcha
-and javascript file for validating
+Student group creation and project preference selection
 
-## STUDENT 
-home page
-student logout
+Admin-controlled allocation workflow
 
-for creating group
+Password recovery with CAPTCHA validation
 
-for selection of projects for group
-for arranging projects as per choise
+Role-based access control
 
-## ADMIN
+Clean and functional user interface
+
+🛠️ Tech Stack
+
+Backend: PHP
+
+Database: MySQL
+
+Frontend: HTML, CSS, JavaScript
+
+Database Management: phpMyAdmin
+
+🗄️ Database
+
+The SQL file required for database import is available inside:
+images/database/
+
+A detailed PDF explaining the database schema and tables is provided in the same directory.
+
+👨‍💼 Admin Module
+🔹 Allocation Control
+
+Admin manages the complete project allocation process.
+
+Allocation logic is based on the average CPI of group members, ensuring fairness.
+
+flush.php is used for master reset of the database.
+
+🔹 Admin Capabilities
+
+Manage students, faculty, and projects
+
+Enable / disable records
+
+Update and delete data
+
+Reset user passwords
+
+View allocation status
+
+🎓 Student Module
+
+Login from the main home page (index.php)
+
+Create and manage student groups
+
+Select and prioritize project preferences
+
+View allocation results
+
+Secure logout functionality
+
+🔐 Authentication & Security
+Login System
+
+Separate login systems for Admin and Students
+
+Admin login/logout handled independently
+
+Change & Forgot Password
+
+All password-related functionality is managed inside the change_pass folder:
+
+Forgot password workflow
+
+Password change functionality
+
+CAPTCHA generation
+
+JavaScript-based input validation
+
+👩‍🏫 Faculty & Project Management
+
+Admin-only access for:
+
+Faculty management
+
+Student management
+
+Project management
+
+Files:
+
+faculty.php
+
 student.php
-faculty.php &
+
 project.php
-this files is for gui to display them
 
-## ABOUT_US.PHP
-for just display about project and creator
+GUI-based interfaces for easy data handling
 
-## F   S   P
-folders for
-	adding
-	deleting
-	updating
-	desabling/enabling
-	changing password by admin
-	javascript file for validating input
-	
-faculty, student and projects 
+⚠️ Faculty-related operations are restricted to admin access only.
+Other general features can be accessed by faculty as permitted.
 
-// faculty can access only by admin 
-// other thing can access by any faculty
+📁 F / S / P Modules
+
+Dedicated folders for Faculty (F), Student (S), and Project (P) management:
+
+Add, update, delete records
+
+Enable / disable entries
+
+Change passwords via admin
+
+JavaScript validation for inputs
+
+ℹ️ About Page
+
+about_us.php displays information about the project and its creator.
+
+🚀 Purpose of the Project
+
+GreenGraph was developed to:
+
+Eliminate manual project allocation errors
+
+Ensure fairness using academic metrics
+
+Simplify coordination between students, faculty, and administrators
+
+Provide a scalable solution for academic institutions
+
+👨‍💻 Author
+
+Yuvraj Kumar Jaiswal
+Software Engineer
