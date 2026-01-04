@@ -1,146 +1,119 @@
-🌿 GreenGraph
+# 🌿 GreenGraph
+**Project Type:** Project Allocation System  
 
-Project Type: Project Allocation System
+GreenGraph is a web-based Project Allocation System that automates fair project distribution using academic metrics, reducing manual effort and improving transparency in academic project management.
 
-GreenGraph is a web-based Project Allocation System designed to automate and optimize the allocation of academic projects to student groups. The system ensures a fair, structured, and transparent allocation process using defined academic criteria, reducing manual effort and administrative overhead.
+---
 
-✨ Key Features
+## ✨ Features
 
-Secure Admin, Student, and Faculty authentication
+- Automated project allocation based on academic criteria
+- Role-based authentication (Admin, Student, Faculty)
+- Student group creation and project preference selection
+- Secure login, logout, and password recovery
+- Admin-controlled allocation workflow
+- Clean and user-friendly interface
 
-Automated project allocation based on group average CPI
+---
 
-Student group creation and project preference selection
+## 🛠️ Tech Stack
 
-Admin-controlled allocation workflow
+- **Backend:** PHP  
+- **Database:** MySQL  
+- **Frontend:** HTML, CSS, JavaScript  
+- **Database Management:** phpMyAdmin  
 
-Password recovery with CAPTCHA validation
+---
 
-Role-based access control
+## 🗄️ Database
 
-Clean and functional user interface
+- SQL file for database import is available in:
+- A detailed PDF explaining the database schema and tables is provided in the same directory.
 
-🛠️ Tech Stack
+---
 
-Backend: PHP
+## 👨‍💼 Admin Module
 
-Database: MySQL
+### Allocation Control
+- Manages the complete project allocation process.
+- Allocation is performed using the **average CPI of group members**.
+- `flush.php` is used for master reset of the database.
 
-Frontend: HTML, CSS, JavaScript
+### Admin Capabilities
+- Manage students, faculty, and projects
+- Add, update, delete, enable, or disable records
+- Reset user passwords
+- Monitor allocation status
 
-Database Management: phpMyAdmin
+---
 
-🗄️ Database
+## 🎓 Student Module
 
-The SQL file required for database import is available inside:
-images/database/
+- Login via the main home page (`index.php`)
+- Create and manage student groups
+- Select and prioritize project preferences
+- View allocated projects
+- Secure logout functionality
 
-A detailed PDF explaining the database schema and tables is provided in the same directory.
+---
 
-👨‍💼 Admin Module
-🔹 Allocation Control
+## 🔐 Authentication & Security
 
-Admin manages the complete project allocation process.
+### Login System
+- Separate login systems for Admin and Students
 
-Allocation logic is based on the average CPI of group members, ensuring fairness.
+### Change & Forgot Password
+Password-related features are handled inside the `change_pass` folder:
+- Forgot password workflow
+- Change password functionality
+- CAPTCHA generation
+- JavaScript-based input validation
 
-flush.php is used for master reset of the database.
+---
 
-🔹 Admin Capabilities
+## 👩‍🏫 Faculty & Project Management
 
-Manage students, faculty, and projects
+- Admin-only access to manage:
+- Faculty
+- Students
+- Projects
+- GUI-based management through:
+- `faculty.php`
+- `student.php`
+- `project.php`
 
-Enable / disable records
+> Faculty management is restricted to Admin access only.
 
-Update and delete data
+---
 
-Reset user passwords
+## 📁 F / S / P Modules
 
-View allocation status
+Dedicated folders for **Faculty (F)**, **Student (S)**, and **Project (P)** management:
+- Add, update, and delete records
+- Enable or disable entries
+- Admin-controlled password changes
+- Input validation using JavaScript
 
-🎓 Student Module
+---
 
-Login from the main home page (index.php)
+## ℹ️ About Page
 
-Create and manage student groups
+- `about_us.php` displays project and author information.
 
-Select and prioritize project preferences
+---
 
-View allocation results
+## 👨‍💻 Author
 
-Secure logout functionality
+**Yuvraj Kumar Jaiswal**  
+*Technical Software Engineer*
 
-🔐 Authentication & Security
-Login System
+---
 
-Separate login systems for Admin and Students
 
-Admin login/logout handled independently
 
-Change & Forgot Password
 
-All password-related functionality is managed inside the change_pass folder:
 
-Forgot password workflow
 
-Password change functionality
 
-CAPTCHA generation
 
-JavaScript-based input validation
 
-👩‍🏫 Faculty & Project Management
-
-Admin-only access for:
-
-Faculty management
-
-Student management
-
-Project management
-
-Files:
-
-faculty.php
-
-student.php
-
-project.php
-
-GUI-based interfaces for easy data handling
-
-⚠️ Faculty-related operations are restricted to admin access only.
-Other general features can be accessed by faculty as permitted.
-
-📁 F / S / P Modules
-
-Dedicated folders for Faculty (F), Student (S), and Project (P) management:
-
-Add, update, delete records
-
-Enable / disable entries
-
-Change passwords via admin
-
-JavaScript validation for inputs
-
-ℹ️ About Page
-
-about_us.php displays information about the project and its creator.
-
-🚀 Purpose of the Project
-
-GreenGraph was developed to:
-
-Eliminate manual project allocation errors
-
-Ensure fairness using academic metrics
-
-Simplify coordination between students, faculty, and administrators
-
-Provide a scalable solution for academic institutions
-
-👨‍💻 Author
-
-Yuvraj Kumar Jaiswal
-Software Engineer
